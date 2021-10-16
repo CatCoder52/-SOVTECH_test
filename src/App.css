@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_banner {
+  background-image: url("./assets/bglg.jpg");
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.film_banner {
+  background-image: url("./assets/flim.jpeg");
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home_banner_text {
+  font-size: 6em;
+  color: #ffffff;
+  font-family: "Tangerine", serif;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.search {
+  display: flex;
+}
+.flim_card {
+  width: 50vw;
+}
+.flim_header {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.flim_txt {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 20px;
+  line-height: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 480px) {
+  .home_banner {
+    background-image: url("./assets/bgsm.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+  .home_banner_text {
+    font-size: 3.7em;
+    color: #ffffff;
+    font-family: "Tangerine", serif;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .flim_card {
+    width: 80vw;
+  }
+  .flim_header {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .flim_txt {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 20px;
   }
 }

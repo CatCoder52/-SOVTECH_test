@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from "react";
-import { Pane, Text, majorScale, Button } from "evergreen-ui";
+import { Pane, majorScale, Button } from "evergreen-ui";
 import { Link } from "react-router-dom";
 import { AutoSuggest } from "react-autosuggestions";
 const Home: FC = () => {
@@ -17,9 +17,6 @@ const Home: FC = () => {
       setAutoComplete(value);
     }
   }, []);
-
-  // const mediaQuery = window.matchMedia("max-width: 480px");
-  // let inputWidth = mediaQuery ? "80vw" : "60vw";
   return (
     <div className="home_banner">
       <Pane marginX={majorScale(2)}>

@@ -11,7 +11,7 @@ const Films: FC = () => {
   const { movieData } = useSelector(movieSelector);
   useEffect(() => {
     dispatch(getMovieAction(qurey));
-  }, [qurey]);
+  }, [qurey, dispatch]);
   return (
     <div className="film_banner">
       <Pane

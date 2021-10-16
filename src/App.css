@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Tangerine");
-
 .home_banner {
   background-image: url("./assets/bglg.jpg");
   height: 100vh;
@@ -26,9 +24,8 @@
   flex-direction: column;
 }
 .home_banner_text {
-  font-size: 6em;
+  font-size: 1em;
   color: #ffffff;
-  font-family: "Tangerine", serif;
   text-align: center;
   margin-bottom: 0.5em;
 }
@@ -64,9 +61,8 @@
     background-size: cover;
   }
   .home_banner_text {
-    font-size: 3.7em;
+    font-size: 1em;
     color: #ffffff;
-    font-family: "Tangerine", serif;
     text-align: center;
     margin-bottom: 0.5em;
   }

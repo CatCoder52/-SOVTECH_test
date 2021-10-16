@@ -21,7 +21,7 @@ const Home: FC = () => {
     <div className="home_banner">
       <Pane marginX={majorScale(2)}>
         <div className="home_banner_content">
-          <Text className="home_banner_text">Home Of Movies</Text>
+          <Text className="home_banner_text">Search Movies</Text>
           <div className="search">
             <AutoSuggest
               name="."

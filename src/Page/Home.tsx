@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from "react";
-import { Pane, Text, majorScale, IconButton, SearchIcon } from "evergreen-ui";
+import { Pane, Text, majorScale, Button } from "evergreen-ui";
 import { Link } from "react-router-dom";
 import { AutoSuggest } from "react-autosuggestions";
 const Home: FC = () => {
@@ -17,12 +17,15 @@ const Home: FC = () => {
       setAutoComplete(value);
     }
   }, []);
+
+  // const mediaQuery = window.matchMedia("max-width: 480px");
+  // let inputWidth = mediaQuery ? "80vw" : "60vw";
   return (
     <div className="home_banner">
       <Pane marginX={majorScale(2)}>
         <div className="home_banner_content">
-          <Text className="home_banner_text">Search Movies</Text>
-          <div className="search">
+          <h1 className="home_banner_text">Search Movies</h1>
+          <div>
             <AutoSuggest
               name="."
               styles={{
@@ -32,21 +35,22 @@ const Home: FC = () => {
                   clipPath: "inset(50%)",
                   height: "1px",
 
-                  overflow: "hidden",
+                  overflow: "auto",
                 },
                 combobox: {
                   display: "inline-block",
                 },
                 searchField: {
-                  padding: ".5rem",
+                  padding: ".9.50rem",
                   border: "2px solid #c8c8c8",
                   backgroundColor: "#fff",
-                  borderRadius: "6px",
+                  borderRadius: "30px",
                   color: "#000",
                   fontWeight: "normal",
                   fontSize: "15px",
                   margin: "0 auto",
-                  width: "300px",
+                  width: "320px",
+                  height: "40px",
                   focus: {
                     color: "#000",
                     border: "2px solid #005499",
@@ -92,11 +96,20 @@ const Home: FC = () => {
                 textDecoration: "inherit",
               }}
             >
-              <IconButton
+              <Button
+                width="320px"
+                justifyContent="center"
+                alignItems="center"
+                marginTop="30px"
+                borderRadius="30px"
+                height="40px"
+                marginRight={16}
                 onClick={() => saveAutoCompleteData(searchQurey)}
-                icon={SearchIcon}
-                marginX={majorScale(2)}
-              />
+                appearance="primary"
+                intent="success"
+              >
+                Search Now
+              </Button>
             </Link>
           </div>
         </div>

@@ -29,9 +29,7 @@
   text-align: center;
   margin-bottom: 0.5em;
 }
-.search {
-  display: flex;
-}
+
 .flim_card {
   width: 50vw;
 }
@@ -51,7 +49,7 @@
 
 @media screen and (max-width: 480px) {
   .home_banner {
-    background-image: url("./assets/bgsm.png");
+    background-image: url("./assets/flim.jpeg");
     height: 100vh;
     display: flex;
     justify-content: center;

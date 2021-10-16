@@ -11,7 +11,7 @@ const Films: FC = () => {
   const { movieData } = useSelector(movieSelector);
   useEffect(() => {
     dispatch(getMovieAction(qurey));
-  }, [dispatch]);
+  }, [qurey]);
   return (
     <div className="film_banner">
       <Pane
@@ -22,7 +22,7 @@ const Films: FC = () => {
       >
         {!movieData  ? (
           <div>
-            <h1 className="flim_header">Sorry No Resualt For Yor Search</h1>
+            <h1 className="flim_header">Sorry No Result For Yor Search</h1>
           </div>
         ) : (
           <div>

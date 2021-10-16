@@ -45,12 +45,12 @@ export const getMovieAction =
   async (dispatch) => {
     try {
       dispatch(setLoading(true));
-      const movie = await (<any>Axios.get(`${baseUrl}/films/?search=${data}`, {
+      const movie: any = await Axios.get(`${baseUrl}/films/?search=${data}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-      }));
+      });
       dispatch(setMovieData(movie.data.results[0]));
     } catch (error: any) {
       dispatch(setError("Something went wrong try again"));
